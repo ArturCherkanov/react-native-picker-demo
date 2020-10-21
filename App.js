@@ -1,12 +1,18 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
+import RNPickerSelect from "react-native-picker-select";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function App () {
 	return (
 		<View style={styles.container}>
-			<Text>Open up App.js to start working on your app!</Text>
-			<StatusBar style='auto' />
+			<RNPickerSelect
+				items={[
+					{ label: "Football", value: "football" },
+					{ label: "Baseball", value: "baseball" },
+					{ label: "Hockey", value: "hockey" },
+				]}
+			/>
+			<Text>Hello world</Text>
 		</View>
 	);
 }
