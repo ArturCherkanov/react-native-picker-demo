@@ -5,11 +5,16 @@ import { StyleSheet, Text, View } from "react-native";
 export default function App () {
 	return (
 		<View style={styles.container}>
+			<Text>Hello World!</Text>
 			<RNPickerSelect
+				onValueChange={(value) => console.log(value)}
 				items={[
-					{ label: "Football", value: "football" },
-					{ label: "Baseball", value: "baseball" },
-					{ label: "Hockey", value: "hockey" },
+					{ label: "JavaScript", value: "JavaScript" },
+					{ label: "TypeStript", value: "TypeStript" },
+					{ label: "Python", value: "Python" },
+					{ label: "Java", value: "Java" },
+					{ label: "C++", value: "C++" },
+					{ label: "C", value: "C" },
 				]}
 			/>
 			<Text>Hello world</Text>
