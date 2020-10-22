@@ -17,7 +17,6 @@ export default function App () {
 					{ label: "C", value: "C" },
 				]}
 			/>
-			<Text>Hello world</Text>
 		</View>
 	);
 }
